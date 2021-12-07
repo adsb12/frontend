@@ -1,0 +1,455 @@
+/* 첫 화면 */
+#main{
+    width:100%;
+    height: auto;
+    background-color: #70B1FF;
+    position: relative;
+}
+#main_line{
+    width:90%;
+    padding-top:4%;
+}
+#main_line h3{
+    font-size:20px;
+    margin-left:10%;
+    color:#fff;
+}
+#main_line h3 span{
+    font-size:25px;
+    color:#194A85;
+    margin-left:1%;
+}
+#main_line img{
+    width:100%;
+}
+#computer{
+    width: 60%;
+    height: 75%;
+    margin:2% 0 0 20%;
+    position: relative;
+}
+#computer h1{
+    position:absolute;
+    top:60px;
+    left: 120px;
+    font-size:300px;
+    color:#194A85;
+}
+#wrap{
+    width: 100%;
+}
+/* 사이드 */
+#java_cli{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 10%;
+    /* background-color:black; */
+}
+/* 간략소개 */
+#brief{
+    width: 90%;
+    height: 1050px;
+    background-color:#FFF8F8;
+    float:right;
+    position: relative;
+    color:#A57F7F;
+}
+#brief h2{
+    font-size: 50px;
+    margin:20% 0 0 25%; 
+}
+#brief p{
+    text-align: center;
+    font-size:20px;
+    position:absolute;
+    top:45%;
+    left:20%;
+}
+/* 간략소개 이미지 */
+#brief_img{
+    position:absolute;
+    top:0;
+    right:150px;
+    width: 30%;
+    height: 80%;
+}
+#brief_img img{
+    margin-top:100px;
+}
+#my_info{
+    position: absolute;
+    bottom:60px;
+    right:430px;
+    font-size: 25px;
+}
+/* 인트로 */
+#intro{
+    width:90%;
+    height: 1050px;
+    float:right;
+    position: relative;
+}
+#intro h2{
+    position: absolute;
+    top:100px;
+    right: 680px;
+    font-size: 50px;
+}
+#intro_R{
+    float:right;
+    margin: 7% 5% 0 0;
+    width:33%;
+    height: 50%;
+    position:relative;
+}
+#intro_R h2{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    border-bottom: 2px solid #ccc;
+}
+#intro_img{
+    margin:25% 0 0 25%;
+}
+/* 인트로 왼쪽 */
+#L_int{
+    float:left;
+    width: 30%;
+    height: 70%;
+    margin: 15% 0 0 20%;
+}
+#L_u{
+    width: 100%;
+    height: 30%;
+}
+#L_u li{
+    font-size: 20px;
+    margin:15px 0 0 5px;
+    line-height: 40px;
+}
+#L_u h3{
+    font-size: 30px;
+    padding:5px 0 5px 5px;
+}
+#L_u li:nth-child(1){
+    width: 100%;
+    margin:0;
+    border-bottom: 2px solid #ccc;
+}
+#L_d{
+    margin-top:10%;
+    width: 100%;
+    height: 60%;
+}
+#L_d li h3{
+    font-size:30px;
+    padding:5px 0 5px 5px;
+}
+#L_d li:nth-child(1){
+    width: 100%-5px;
+    border-bottom: 2px solid #ccc;
+}
+#L_d li{
+    margin-top:4%;
+    font-size: 20px;
+}
+#L_d li:nth-child(2){
+    float:left;
+    height: 88%;
+    margin:0 5% 0 0;
+}
+#L_d img{
+    height: 100%;
+}
+
+/* 인트로 오른쪽 */
+#R_d{
+    width:33%;
+    height: 30%;
+    float:right;
+    margin-right:5%;
+}
+#R_d li h3{
+    font-size:30px;
+    padding:5px 0 5px 5px;
+}
+#R_d li:nth-child(1){
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    margin:0;
+}
+#R_d li{
+    font-size: 20px;
+    margin:15px 0 0 5px;
+}
+/* 보유기술 */
+#skills{
+    width: 90%;
+    height: 2800px;
+    float:right;
+    position: relative;
+}
+/* 보유기술 상단 */
+#skills h2{
+    font-size:50px;
+    margin:7% 0 0 30%;
+}
+#skills_img{
+    position: absolute;
+    top:6%;
+    left:35%;
+    width: 30%;
+    height: 10%;
+}
+#skills_img img{
+    width: 100%;
+}
+#skills_line{
+    position: absolute;
+    top:14%;
+    right:0;
+    width:50%;
+}
+#skills_line h2{
+    border-bottom:2px solid #ccc;
+}
+/* 보유기술 중앙 */
+#program_skills{
+    width: 100%;
+    height: 1050px;
+    margin-top: 30%;
+}
+#pro_img{
+    float:left;
+    width:25%;
+    height:40%;
+    margin: 20% 0 0 20%;
+}
+#pro_img img{
+    width:100%;
+    height:100%;
+}
+#pro_gra{
+    float:left;
+    width: 25%;
+    height: 40%;
+    margin: 20% 0 0 10%;
+}
+#pro_gra h3{
+    font-size:30px;
+}
+#pro_gra > li:nth-child(1){
+    margin-bottom:20px;
+}
+#pro_gra li{
+    position: relative;
+    margin-top:20px;
+    font-size:15px;
+}
+#pro_gra div{
+    position:absolute;
+    top:5px;
+    left:90px;
+    width: 65%;
+    height:15px;
+    border:1px solid #000;
+}
+#pro1{
+    background: linear-gradient(90deg, #BE8DFF 50%, #ffffff 50%);
+}
+#pro2{
+    background: linear-gradient(90deg, #BE8DFF 55%, #ffffff 45%);
+}
+#pro3{
+    background: linear-gradient(90deg, #BE8DFF 65%, #ffffff 35%);
+}
+#pro4{
+    background: linear-gradient(90deg, #BE8DFF 80%, #ffffff 20%);
+}
+#pro5{
+    background: linear-gradient(90deg, #BE8DFF 60%, #ffffff 40%);
+}
+#pro6{
+    background: linear-gradient(90deg, #BE8DFF 58%, #ffffff 42%);
+}
+#pro7{
+    background: linear-gradient(90deg, #BE8DFF 68%, #ffffff 32%);
+}
+#pro8{
+    background: linear-gradient(90deg, #BE8DFF 50%, #ffffff 50%);
+}
+#pro_gra li span{
+    float:right;
+    margin:0 5px 0 0;
+}
+/* 보유기술 하단 */
+#program_Int{
+    width: 100%;
+    height: 1050px;
+}
+#int_L{
+    float:left;
+    width:30%;
+    height: 70%;
+    margin: 10% 0 0 20%;
+}
+#int_L_img{
+    width: 100%;
+    height:55%;
+    margin-bottom: 15%;
+}
+#int_L_img img{
+    width:100%;
+    height:100%;
+}
+#int_L_com{
+    width: 100%;
+    height: 40%;
+    position: relative;
+}
+#int_L_com h3{
+    font-size:30px;
+    padding:5px 0 5px 5px;
+}
+#int_line{
+    position: absolute;
+    top:50px;
+    left:-343px;
+    width:113%;
+    border-bottom: 2px solid #ccc;
+}
+#int_L_com li:nth-child(2){
+    margin:0;
+}
+#int_L_com li{
+    font-size: 20px;
+    margin: 15px 0 0 5px;
+}
+#int_R{
+    float:left;
+    width: 30%;
+    height: 70%;
+    margin: 10% 0 0 5%;
+}
+#int_R img{
+    width:100%;
+    height: 100%;
+}
+/* 포트폴리오 */
+#portfolio{
+    width: 90%;
+    height: 1500px;
+    float:right;
+    position:relative;
+}
+/* 포트폴리오 상단 */
+#portfolio > h2{
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 15%;
+}
+#port_tit{
+    position:absolute;
+    width: 80%;
+    right:0;
+    top:150px;
+}
+#port_tit h2{
+    font-size: 50px;
+    border-bottom: 2px solid #ccc;
+}
+#port_img{
+    width: 60%;
+    height: 50%;
+    margin:15% 0 0 23%;
+}
+#port_img img{
+    width: 100%;
+    height:100%;
+}
+/* 포트폴리오 하단 */
+#port_con{
+    float:right;
+    position:relative;
+    width: 80%;
+    height: 30%;
+}
+#con_L{
+    width: 40%;
+    height: 100%;
+}
+#con_L h3{
+    font-size:30px;
+    padding:5px 0 5px 5px;
+}
+#con_L li:nth-child(1){
+    width:100%;
+    border-bottom:2px solid #ccc;
+    margin:0;
+}
+#con_L li{
+    font-size: 20px;
+    margin: 15px 0 0 5px;
+}
+#con_R{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:250px;
+    font-size: 20px;
+}
+#con_R_tit h3{
+    font-size:30px;
+    padding:5px 0 5px 5px;
+}
+#con_R_tit{
+    width: 100%;
+    border-bottom:2px solid #ccc;
+}
+/* 끝 인사 */
+#end{
+    width: 100%;
+    height: auto;
+    float: left;
+    background:url(../images/desktop-ged6b80115_1920.png);
+    background-size: 100%;
+}
+/* 끝 인사 제목 */
+#end_tit{
+    width:90%;
+    margin-top: 10%;
+    border-bottom: 2px solid #ccc;
+}
+#end_tit p{
+    font-size:100px;
+    font-weight: bold;
+    text-align: center;
+    color:#BE8DFF;
+}
+#end_tit span{
+    font-size:20px;
+    font-weight: lighter;
+    color:#ccc;
+}
+/* 끝 인사 내용 */
+#end_con{
+    width:55%;
+    height: 55%;
+    background-color:rgba(250, 250, 250, 0.7);
+    float:right;
+    margin-top:5%;
+}
+#end_con p{
+    padding-left:5%;
+    font-size:20px;
+    line-height:50px;
+}
+#end_con span{
+    color:#BE8DFF;
+    font-weight: bold;
+}
