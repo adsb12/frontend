@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/jquery.easing.1.3.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery.fadethis.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/jquery.easeScroll.js"></script>
 </head>
 <body>
     <!-- 첫화면 -->
@@ -20,23 +23,23 @@
         </div>
         <div id="computer">
             <img src="images/monitor-gd13a73a50_1280.png" alt="">
-            <h1>金廷勳</h1>
+            <h1></h1>
         </div>
     </section>
     <div id="wrap">
         <!-- 사이드 -->
         <aside id="java_cli">
             <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
+                <li><a href="#intro"><img src="images/Icon awesome-java1.png" alt=""></a></li>
+                <li><a href="#skills"><img src="images/Icon awesome-java1.png" alt=""></a></li>
+                <li><a href="#portfolio"><img src="images/Icon awesome-java1.png" alt=""></a></li>
+                <li><a href="#end"><img src="images/Icon awesome-java1.png" alt=""></a></li>
             </ul>
         </aside>
         <!-- 간략소개 -->
         <section id="brief">
-            <h2>Brief Introduction</h2>
-            <p>
+            <h2 class="slide-bottom">Brief Introduction</h2>
+            <p class="slide-top">
                 경찰을 준비 하여서 준법정신과 체력은 최고라고 볼 수 있습니다.<br>
                 그리고 새로운 길을 개척하는 열린 마인드의 소유자입니다.<br>
                 처음에는 관련학과 나오신 분들 보다는 못 할지 몰라도 충분히 따라잡고<br>
@@ -45,10 +48,10 @@
             </p>
             <!-- 간략소개 이미지 -->
             <div id="brief_img">
-                <img src="images/마스크 그룹 15.png" alt="">
+                <img src="images/마스크 그룹 15.png"  class="slide-right" alt="">
             </div>
             <div id="my_info">
-                <ul>
+                <ul class="slide-right">
                     <li>Name     :   Kim</li>
                     <li>Tel         :   010</li>
                     <li>E-mail    :   naver</li>
@@ -68,33 +71,34 @@
             <!-- 인트로 왼쪽 -->
             <div id="L_int">
                 <div id="L_u">
-                    <li><h3>Related Education</h3></li>
-                    <li>▶  2021 코리아IT 프론트엔드 수료중</li>
-                    <li>▶  2021~2022 코리아IT 백엔드 수료중</li>
+                    <li class="slide-bottom"><h3>Related Education</h3></li>
+                    <li class="slide-bottom">▶  2021 코리아IT 프론트엔드 수료중</li>
+                    <li class="slide-bottom">▶  2021~2022 코리아IT 백엔드 수료중</li>
                 </div>
                 <div id="L_d">
-                    <li><h3>Education</h3></li>
+                    <li class="slide-bottom"><h3>Education</h3></li>
                     <li><img src="images/선.png"></li>
-                    <li>배정중학교 졸업[2011]</li>
-                    <li>동성고등학교 졸업[2014]</li>
-                    <li>동의과학대 입학[2015]</li>
-                    <li>1사단 군 입대 [2016]</li>
-                    <li>군 제대 후 복학 [2018]</li>
-                    <li>동의과학대 졸업 [2019]</li>
-                    <li>코리아IT 아카데미 학원 수료중</li>
+                    <li class="slide-bottom">배정중학교 졸업[2011]</li>
+                    <li class="slide-bottom">동성고등학교 졸업[2014]</li>
+                    <li class="slide-bottom">동의과학대 입학[2015]</li>
+                    <li class="slide-bottom">1사단 군 입대 [2016]</li>
+                    <li class="slide-bottom">군 제대 후 복학 [2018]</li>
+                    <li class="slide-bottom">동의과학대 졸업 [2019]</li>
+                    <li class="slide-bottom">코리아IT 아카데미 학원 수료중</li>
                 </div>
             </div>
             <!-- 인트로 오른쪽 -->
             <div id="R_d">
                 <ul>
-                    <li><h3>Certificate</h3></li>
-                    <li>▶  1종 보통</li>
-                    <li>▶  태권도 2단</li>
-                    <li>▶  유도 1단</li>
-                    <li>▶  실용글쓰기 3급 </li>
+                    <li class="slide-bottom"><h3>Certificate</h3></li>
+                    <li class="slide-bottom">▶  1종 보통</li>
+                    <li class="slide-bottom">▶  태권도 2단</li>
+                    <li class="slide-bottom">▶  유도 1단</li>
+                    <li class="slide-bottom">▶  실용글쓰기 3급 </li>
                 </ul>
             </div>
         </section>
+        <div id="line"></div>
         <!-- 보유기술 -->
         <section id="skills">
             <!-- 보유기술 상단 -->
@@ -108,7 +112,7 @@
             <!-- 보유기술 중앙 -->
             <div id="program_skills">
                 <div id="pro_img">
-                    <img src="images/diagram-gcf909b5e8_1280.png" alt="">
+                    <img src="images/diagram-gcf909b5e8_1280.png"  class="slide-bottom" alt="">
                 </div>
                 <ul id="pro_gra">
                     <li><h3>Program Skills</h3></li>
@@ -153,15 +157,15 @@
                         <img src="images/그룹 11.png" alt="">
                     </div>
                     <ul id="int_L_com">
-                        <li><h3>JAVA가 높은 이유</h3></li>
+                        <li class="slide-bottom"><h3>JAVA가 높은 이유</h3></li>
                         <li id="int_line"></li>
-                        <li>- IT로 와서 처음 배운것이 Java이다.</li>
-                        <li>- 알고리즘이나 객체지향프로그래밍이 프로그램이 살아있는 느낌으로 다가왔다</li>
-                        <li>- 유기적인 연결과 그러한 것을 생각하는게 재밌다.</li>
+                        <li class="slide-bottom">- IT로 와서 처음 배운것이 Java이다.</li>
+                        <li class="slide-bottom">- 알고리즘이나 객체지향프로그래밍이 프로그램이 살아있는 느낌으로 다가왔다</li>
+                        <li class="slide-bottom">- 유기적인 연결과 그러한 것을 생각하는게 재밌다.</li>
                     </ul>
                 </div>
                 <div id="int_R">
-                    <img src="images/ai-gbe8af1748_1920.png" alt="">
+                    <img src="images/ai-gbe8af1748_1920.png"  class="slide-right" alt="">
                 </div>
             </div>
         </section>
@@ -179,14 +183,14 @@
             <div id="port_con">
                 <ul id="con_L">
                     <li><h3>PROGRAM</h3></li>
-                    <li>기간<span>약 25시간</span></li>
-                    <li>프로그램 <span>Visual Studio Code</span></li>
+                    <li class="slide-left">기간<br><br>프로그램</li>
+                    <li class="slide-right">약 25시간<br><br>Visual Studio Code</li>
                 </ul>
                 <div id="con_R">
                     <div id="con_R_tit">
                         <h3>CONTENTS</h3>
                     </div>
-                    <p>기존 캐논사이트의 가시성이나 스토어에 대한 
+                    <p class="slide-bottom">기존 캐논사이트의 가시성이나 스토어에 대한 
                         접근성이 좋지 않다고 생각하여 나름대로의 
                         디자인과 움직이는 화면을 넣어 사용자들이
                         한 번 이라도 다시 눈길이 갈 수 있도록 만들고,
@@ -201,7 +205,7 @@
         <section id="end">
             <!-- 끝 인사 제목 -->
             <div id="end_tit">
-                <p>Cōgitō ergo sum <span>-데카르트-</span></p>
+                <p class="slide-left">Cōgitō ergo sum <span>-데카르트-</span></p>
             </div>
             <!-- 끝 인사 내용 -->
             <div id="end_con">
