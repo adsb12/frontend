@@ -1,5 +1,5 @@
-$.fn.easeScroll = function(options) {
-    ! function() {
+$.fn.easeScroll = function (options) {
+    ! function () {
         function e() {
             var e = !1;
             e && c("keydown", r), v.keyboardSupport && !e && u("keydown", r)
@@ -14,8 +14,8 @@ $.fn.easeScroll = function(options) {
                 if (S = document.compatMode.indexOf("CSS") >= 0 ? o : t, w = t, e(), x = !0, top != self) y = !0;
                 else if (r > n && (t.offsetHeight <= n || o.offsetHeight <= n)) {
                     var a = !1,
-                        i = function() {
-                            a || o.scrollHeight == document.height || (a = !0, setTimeout(function() {
+                        i = function () {
+                            a || o.scrollHeight == document.height || (a = !0, setTimeout(function () {
                                 o.style.height = document.height + "px", a = !1
                             }, 100))
                         };
@@ -46,7 +46,7 @@ $.fn.easeScroll = function(options) {
                 start: +new Date
             }), !T) {
                 var l = e === document.body,
-                    u = function() {
+                    u = function () {
                         for (var r = +new Date, a = 0, i = 0, c = 0; c < M.length; c++) {
                             var s = M[c],
                                 d = r - s.start,
@@ -190,7 +190,7 @@ $.fn.easeScroll = function(options) {
             arrowScroll: 50,
             touchpadSupport: !0,
             fixedBackground: !0
-        }, options );
+        }, options);
 
         var w, g = {
             frameRate: settings.frameRate,
@@ -233,17 +233,17 @@ $.fn.easeScroll = function(options) {
             T = !1,
             C = +new Date,
             z = {};
-        setInterval(function() {
+        setInterval(function () {
             z = {}
         }, 1e4);
-        var A, N = function() {
-                var e = 0;
-                return function(t) {
-                    return t.uniqueID || (t.uniqueID = e++)
-                }
-            }(),
-            E = function() {
-                return window.requestAnimationFrame || window.webkitRequestAnimationFrame || function(e, t, o) {
+        var A, N = function () {
+            var e = 0;
+            return function (t) {
+                return t.uniqueID || (t.uniqueID = e++)
+            }
+        }(),
+            E = function () {
+                return window.requestAnimationFrame || window.webkitRequestAnimationFrame || function (e, t, o) {
                     window.setTimeout(e, o || 1e3 / 60)
                 }
             }(),
