@@ -1,4 +1,5 @@
 $(function () {
+
     $(window).fadeThis(1000);
 
     const content = "金廷勳";
@@ -58,8 +59,8 @@ $(function () {
                 $('.re_im4').css({ 'opacity': 0 });
                 $('.im4').css({ 'opacity': 1 });
             } else if ($(window).scrollTop() > 5700 && $(window).scrollTop() < 6750) {
-                $('.re_im1').css({ 'opacity': 1 });
-                $('.im1').css({ 'opacity': 0 });
+                $('.re_im1').css({ 'opacity': 0 });
+                $('.im1').css({ 'opacity': 1 });
                 $('.re_im2').css({ 'opacity': 0 });
                 $('.im2').css({ 'opacity': 1 });
                 $('.re_im3').css({ 'opacity': 1 });
@@ -67,8 +68,8 @@ $(function () {
                 $('.re_im4').css({ 'opacity': 0 });
                 $('.im4').css({ 'opacity': 1 });
             } else {
-                $('.re_im1').css({ 'opacity': 1 });
-                $('.im1').css({ 'opacity': 0 });
+                $('.re_im1').css({ 'opacity': 0 });
+                $('.im1').css({ 'opacity': 1 });
                 $('.re_im2').css({ 'opacity': 0 });
                 $('.im2').css({ 'opacity': 1 });
                 $('.re_im3').css({ 'opacity': 0 });

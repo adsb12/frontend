@@ -13,14 +13,45 @@
     font-size:20px;
     margin-left:10%;
     color:#fff;
+    animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
 }
 #main_line h3 span{
     font-size:25px;
     color:#194A85;
     margin-left:1%;
 }
-#main_line img{
+.line_img{
     width:100%;
+    -webkit-animation-name: line;
+    -webkit-animation-duration: 2.3s;
+    -webkit-animation-timing-function:linear ;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: both
+}
+@-webkit-keyframes line {
+    0% {
+        -webkit-transform: translateX(-90%) translateY(0) scale(1);
+    }
+
+    100% {
+        -webkit-transform: translateX(0) translateY(0) scale(1);
+    }
 }
 #computer{
     width: 60%;
