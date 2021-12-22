@@ -34,6 +34,22 @@
     font-size:25px;
     color:#194A85;
     margin-left:1%;
+    animation: fade 5s;
+    -webkit-animation: fade 5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
 }
 .line_img{
     width:100%;
@@ -297,6 +313,7 @@
     top:14%;
     right:0;
     width:50%;
+    overflow:hidden;
 }
 #skills_line h2{
     border-bottom:2px solid #ccc;
@@ -429,6 +446,7 @@
     height: 1300px;
     float:right;
     position:relative;
+    overflow: hidden;
 }
 /* 포트폴리오 상단 */
 #portfolio > h2{
@@ -442,6 +460,7 @@
     width: 80%;
     right:0;
     top:60px;
+
 }
 #port_tit h2{
     font-size: 50px;
@@ -538,6 +557,7 @@
     background-color:rgba(250, 250, 250, 0.7);
     float:right;
     margin-top:4%;
+    overflow: hidden;
 }
 #end_con p{
     padding-left:5%;
